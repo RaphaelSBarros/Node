@@ -1,5 +1,9 @@
 import validator from 'validator';
 
-let ip = '127.999.0.1';
+let nome: string = 'Raphael';
 
-console.log(validator.isIP(ip));
+if(validator.isLowercase(nome)){
+    console.log(`A string ${nome} é toda minúscula`);
+}else{
+    console.log(`A string ${nome} NÃO é toda minúscula`);
+}
