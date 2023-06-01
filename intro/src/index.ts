@@ -1,4 +1,6 @@
-const Matematica = require('./Matematica');
+import * as Matematica from './Matematica'; //(importando tudo que tem export no arquivo)
+//import { somar, subtrair, multiplicar } from './Matematica'; (importando funções específicas com export no arquivo)
+//import Matematica from './Matematica'; (importa tudo que exportado como default)
 
 let n1: number = 10;
 let n2: number = 2;

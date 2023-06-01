@@ -1,16 +1,20 @@
-function somar(x: number, y: number): number
+let version: string = '1.0';
+
+export function somar(x: number, y: number): number
 {
    return x + y 
 }
-function subtrair(x: number, y: number): number
+export function subtrair(x: number, y: number): number
 {
    return x - y 
 }
-function multiplicar(x: number, y: number): number
+export function multiplicar(x: number, y: number): number
 {
    return x * y 
 }
 
-module.exports.somar = somar;
-module.exports.subtrair = subtrair;
-module.exports.multiplicar = multiplicar;
+// export default{
+//     somar,
+//     subtrair,
+//     multiplicar
+// } (Precisa remover o export das funções)
