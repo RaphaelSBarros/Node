@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.2.5"
+    "@types/node": "^20.2.5",
+    "@types/validator": "^13.7.17"
+  },
+  "dependencies": {
+    "validator": "^13.9.0"
   }
 }
