@@ -10,7 +10,7 @@ router.get('/', (req: Request, res: Response)=>{
         showOld = true;
     }
 
-    res.render('home', {
+    res.render('pages/home', {
         user: { name: 'Raphael', lastname: 'Barros', age: '21'},
         showWelcome: true,
         showOld,
@@ -26,11 +26,11 @@ router.get('/', (req: Request, res: Response)=>{
 });
 
 router.get('/contato', (req: Request, res: Response)=>{
-    res.send('Formulário de contato');
+    res.render('pages/contato');
 });
 
 router.get('/sobre', (req: Request, res: Response)=>{
-    res.send('Página institucional sobre a empresa');
+    res.render('pages/sobre');
 });
 
 export default router;

@@ -1,12 +1,6 @@
-<html>
-<head>
-    <title>Página Home</title>
-</head>
-<body>
-    <h1>Título da página</h1>
-    <hr/>
+{{>partials/header}}
 
-        Olá {{ user.name }} {{ user.lastname }}, tudo bem?
+    Olá {{ user.name }} {{ user.lastname }}, tudo bem?
     {{#showOld}}
         Como vai a vida?
     {{/showOld}}
@@ -20,7 +14,7 @@
 
     <ul>
         {{#products}}
-            <li>{{ title }} - R$ {{ price }}</li>
+            {{>partials/productItem}}
         {{/products}}
     </ul>
 
@@ -35,5 +29,4 @@
         {{/frases}}
     </ul>
 
-</body>
-</html>
+{{>partials/footer}}
