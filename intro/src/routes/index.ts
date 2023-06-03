@@ -6,7 +6,7 @@ router.get('/', (req: Request, res: Response)=>{
     let age: number = 15;
     let showOld: boolean = false;
 
-    if(age > 10){
+    if(age > 20){
         showOld = true;
     }
 
@@ -20,8 +20,7 @@ router.get('/', (req: Request, res: Response)=>{
             {title: 'Produto W', price: 20}
         ],
         frases: [
-            'Alguma coisa legal escrita',
-            'Outra coisa muito bacana'
+            
         ]
     });
 });

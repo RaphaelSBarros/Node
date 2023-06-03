@@ -10,6 +10,9 @@
     {{#showOld}}
         Como vai a vida?
     {{/showOld}}
+    {{^showOld}}
+        Beleza?
+    {{/showOld}}
 
     <hr/>
 
@@ -26,6 +29,9 @@
     <ul>
         {{#frases}}
             <li>{{ . }}</li>
+        {{/frases}}
+        {{^frases}}
+            Não há frases motivacionais hoje.
         {{/frases}}
     </ul>
 
