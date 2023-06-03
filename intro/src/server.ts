@@ -1,8 +1,10 @@
 import express, {Request, Response} from 'express';
-import mainRoutes from './routes/index'
-
+import path from 'path';
+import mainRoutes from './routes/index';
 
 const server = express();
+
+server.use(express.static(path.join(__dirname, '../public')));
 
 server.use(mainRoutes);
 
