@@ -13,7 +13,16 @@ router.get('/', (req: Request, res: Response)=>{
     res.render('home', {
         user: { name: 'Raphael', lastname: 'Barros', age: '21'},
         showWelcome: true,
-        showOld
+        showOld,
+        products:[
+            {title: 'Produto X', price: 10},
+            {title: 'Produto Y', price: 15},
+            {title: 'Produto W', price: 20}
+        ],
+        frases: [
+            'Alguma coisa legal escrita',
+            'Outra coisa muito bacana'
+        ]
     });
 });
 
