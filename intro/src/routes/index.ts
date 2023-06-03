@@ -3,7 +3,7 @@ import { Router, Request, Response } from "express";
 const router = Router();
 
 router.get('/', (req: Request, res: Response)=>{
-    res.send('Olá Mundo!')
+    res.send('Olá Mundo!');
 });
 
 router.get('/contato', (req: Request, res: Response)=>{
@@ -11,7 +11,11 @@ router.get('/contato', (req: Request, res: Response)=>{
 });
 
 router.get('/sobre', (req: Request, res: Response)=>{
-    res.send('Página institucional sobre a empresa')
+    res.send('Página institucional sobre a empresa');
+});
+
+router.get('/noticias', (req: Request, res: Response)=>{
+    res.send('Lista de notícias');
 })
 
 export default router;
